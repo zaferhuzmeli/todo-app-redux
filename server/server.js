@@ -44,6 +44,10 @@ app.get('/todos', (req, res) => res.send(todos));
 
 app.post('/todos', (req, res) => {
   const todo = { title: req.body.title, id: nanoid(), completed: false };
+  // if todo.title is empty, return error
+  if (!todo.title) {
+    return res.status(400).send({ error: 'Title is required' });
+  }
   todos.push(todo);
   return res.send(todo);
 });

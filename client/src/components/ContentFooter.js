@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { changedActiveFilter, clearCompleted , selectTodos, selectActiveFilter} from "../store/reducers/todosSlice";
+import { changedActiveFilter, clearCompleted , selectTodos, selectActiveFilter} from "../store/slices/todosSlice";
 
 function ContentFooter() {
 

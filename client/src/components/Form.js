@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../store/reducers/todosSlice";
+import { addTodo } from "../store/slices/todosSlice";
 
 function Form() {
   const [title, setTitle] = useState("");
