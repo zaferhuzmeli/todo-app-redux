@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { changedActiveFilter, clearCompleted , selectTodos, selectActiveFilter} from "../store/slices/todosSlice";
+import { changedActiveFilter, clearCompleted , selectTodos, selectActiveFilter} from "../store/slices/todoSlice";
 
 function ContentFooter() {
 
@@ -24,13 +24,13 @@ function ContentFooter() {
 
       <ul className="filters">
         <li>
-          <a className={activeFilter === 'all' ? 'selected' : ''} onClick={() => handleFilter('all')}>All</a>
+          <a href="#" className={activeFilter === 'all' ? 'selected' : ''} onClick={() => handleFilter('all')}>All</a>
         </li>
         <li>
-          <a className={activeFilter === 'active' ? 'selected' : ''} onClick={() => handleFilter('active')}>Active</a>
+          <a href="#" className={activeFilter === 'active' ? 'selected' : ''} onClick={() => handleFilter('active')}>Active</a>
         </li>
         <li>
-          <a className={activeFilter === 'completed' ? 'selected' : ''} onClick={() => handleFilter('completed')}>Completed</a>
+          <a href="#" className={activeFilter === 'completed' ? 'selected' : ''} onClick={() => handleFilter('completed')}>Completed</a>
         </li>
       </ul>
       <button
